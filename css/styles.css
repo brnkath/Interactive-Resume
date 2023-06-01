@@ -1,1 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
 
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(247, 241, 241);
+  background: #121212;
+}
+
+main {
+  width: 100%;
+  max-width: 800px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 0.6;
+  margin: 20px;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.animated-progress {
+  width: 100px;
+  height: 8px;
+  border-radius: 5px;
+  margin: 5px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.animated-progress span {
+  height: 100%;
+  display: block;
+  width: 0;
+  /* color: white;
+  font-size: 0.5rem; */
+  position: absolute;
+  /* text-align: end; */
+  padding-right: 5px;
+}
+
+.progress-blue span {
+  background-color: blue;
+}
