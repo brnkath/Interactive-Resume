@@ -16,17 +16,60 @@ body {
   align-items: center;
   justify-content: center;
   color: rgb(247, 241, 241);
-  background: #121212;
+  background: #0c0b0b;
+}
+
+a {
+  text-decoration: none;
 }
 
 main {
   width: 100%;
   max-width: 800px;
+  border: 1px solid rgb(247, 241, 241);
+  border-radius: 5px;
 }
 
 h1 {
-  text-align: center;
-  margin-bottom: 20px;
+  margin: 20px;
+}
+
+.line {
+  align-items: center;
+  margin: 1em -1em;
+
+  &:before,
+  &:after {
+    height: 1px;
+    margin: 0 1em;
+  }
+}
+
+.divider {
+  display: flex;
+
+  &:before,
+  &:after {
+    content: "";
+    flex: 1;
+  }
+}
+
+.glow {
+  &:before,
+  &:after {
+    height: 5px;
+    -webkit-filter: blur(5px);
+    border-radius: 5px;
+  }
+
+  &:before {
+    background: linear-gradient(to right, #0d6efd, hotpink);
+  }
+
+  &:after {
+    background: linear-gradient(to left, #0d6efd, hotpink);
+  }
 }
 
 .contact-container {
@@ -34,19 +77,19 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   line-height: 0.6;
-  margin: 20px;
+  margin: 10px 20px;
 }
 
 .skills-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 20px;
+  margin: 10px 20px;
 }
 
 .animated-progress {
   width: 100px;
-  height: 8px;
+  height: 4px;
   border-radius: 5px;
   margin: 5px 0;
   overflow: hidden;
@@ -57,13 +100,10 @@ h1 {
   height: 100%;
   display: block;
   width: 0;
-  /* color: white;
-  font-size: 0.5rem; */
   position: absolute;
-  /* text-align: end; */
   padding-right: 5px;
 }
 
 .progress-blue span {
-  background-color: blue;
+  background-color: #0d6efd;
 }
