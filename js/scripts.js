@@ -5,5 +5,4 @@ $(".animated-progress span").each(function () {
     },
     1000
   );
-  // $(this).text($(this).attr("data-progress") + "%");
 });
