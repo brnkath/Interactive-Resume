@@ -100,9 +100,16 @@ p {
 .skills-container {
   display: flex;
   flex-direction: row;
+  flex: 25%;
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 10px 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .skills-container {
+    flex: 50%;
+  }
 }
 
 .animated-progress {
