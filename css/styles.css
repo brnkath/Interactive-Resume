@@ -6,11 +6,6 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 body {
   display: flex;
   align-items: center;
@@ -25,13 +20,33 @@ a {
 
 main {
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
   border: 1px solid rgb(247, 241, 241);
   border-radius: 5px;
+  padding: 30px;
 }
 
 h1 {
-  margin: 20px;
+  margin: 10px 30px;
+  font-size: 1.75rem;
+}
+
+h2 {
+  margin: 10px !important;
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1rem;
+  color: #0d6efd;
+}
+
+h6 {
+  font-size: 0.9rem;
+}
+
+p {
+  font-size: 0.8rem;
 }
 
 .line {
@@ -60,6 +75,7 @@ h1 {
   &:after {
     height: 5px;
     -webkit-filter: blur(5px);
+    filter: blur(5px);
     border-radius: 5px;
   }
 
@@ -75,9 +91,9 @@ h1 {
 .contact-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  line-height: 0.6;
+  justify-content: flex-start;
   margin: 10px 20px;
+  padding: 0px 10px;
 }
 
 .skills-container {
@@ -106,4 +122,14 @@ h1 {
 
 .progress-blue span {
   background-color: #0d6efd;
+}
+
+.experience-container {
+  margin: 10px 20px;
+  padding: 0px 10px;
+}
+
+.education-container {
+  margin: 10px 20px;
+  padding: 0px 10px;
 }
