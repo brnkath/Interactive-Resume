@@ -99,16 +99,25 @@ p {
 
 .skills-container {
   display: flex;
-  flex-direction: row;
-  flex: 25%;
-  justify-content: space-around;
   flex-wrap: wrap;
+  justify-content: space-around;
   margin: 10px 20px;
 }
 
-@media screen and (max-width: 992px) {
-  .skills-container {
+.skills-column {
+  flex: 25%;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .skills-column {
     flex: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skills-column {
+    flex-direction: column;
   }
 }
 
