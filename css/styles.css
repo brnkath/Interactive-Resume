@@ -95,6 +95,12 @@ p {
   justify-content: flex-start;
   margin: 10px 20px;
   padding: 0px 10px;
+  font-size: 0.9rem;
+}
+
+.tagline {
+  margin: 0 30px;
+  font-size: 0.9rem;
 }
 
 .skills-container {
